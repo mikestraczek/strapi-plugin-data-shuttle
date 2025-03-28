@@ -1,4 +1,4 @@
-# strapi-plugin-import-export
+# strapi-plugin-data-shuttle
 
 ## Features
 

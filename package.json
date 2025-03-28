@@ -62,20 +62,20 @@
   },
   "strapi": {
     "kind": "plugin",
-    "name": "strapi-plugin-import-export",
+    "name": "strapi-plugin-data-shuttle",
     "displayName": "Import Export Strapi Plugin",
     "description": ""
   },
-  "name": "strapi-plugin-import-export",
+  "name": "strapi-plugin-data-shuttle",
   "description": "",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/mikestraczek/strapi-plugin-import-export.git"
+    "url": "git+ssh://git@github.com/mikestraczek/strapi-plugin-data-shuttle.git"
   },
   "bugs": {
-    "url": "https://github.com/mikestraczek/strapi-plugin-import-export/issues"
+    "url": "https://github.com/mikestraczek/strapi-plugin-data-shuttle/issues"
   },
-  "homepage": "https://github.com/mikestraczek/strapi-plugin-import-export#readme",
+  "homepage": "https://github.com/mikestraczek/strapi-plugin-data-shuttle#readme",
   "author": "Mike Straczek <mike.straczek@next-levels.de>"
 }
