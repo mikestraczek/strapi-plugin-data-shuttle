@@ -49,7 +49,6 @@ const exportData = async ({
   const slugToProcess = CustomSlugToSlug[slug] || slug;
   const queryBuilder = new ObjectBuilder();
 
-  //fails in here
   queryBuilder.extend(getPopulateFromSchema(slugToProcess, deepness));
 
   if (applySearch) {
@@ -95,7 +94,6 @@ const buildFilterQuery = (search) => {
  */
 const convertData = (entries: any[], options: any) => {
   const converter = getConverter(options.dataFormat);
-
   const convertedData = converter.convertEntries(entries, options);
 
   return convertedData;

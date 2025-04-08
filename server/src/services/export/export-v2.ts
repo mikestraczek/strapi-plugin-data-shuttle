@@ -51,12 +51,14 @@ async function exportDataV2({
       : toArray(CustomSlugToSlug[slug] || slug);
 
   let store = {};
+
   for (const slug of slugsToExport) {
     const hierarchy = buildSlugHierarchy(slug, deepness);
     store = await findEntriesForHierarchy(store, slug, hierarchy, deepness, {
       ...(applySearch ? { search } : {}),
     });
   }
+
   const jsoContent = {
     version: 2,
     data: store,

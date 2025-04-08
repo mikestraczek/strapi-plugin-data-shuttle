@@ -54,15 +54,12 @@ const withBeforeConvert = (convertFn) => (entries, options) => {
 
 const beforeConvert = (entries, options) => {
   entries = toArray(entries);
-
   entries = exportMedia(entries, options);
+
   if (options.relationsAsId) {
     entries = exportRelationsAsId(entries, options);
   }
 
-  if (getModel(options.slug).modelType === 'contentType') {
-    return entries?.[0];
-  }
   return entries;
 };
 
