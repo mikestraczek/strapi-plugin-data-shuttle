@@ -1,5 +1,3 @@
-import pluginPkg from '../../../package.json';
-
-const pluginId = pluginPkg.strapi.name;
+const pluginId = 'strapi-plugin-data-shuttle';
 
 export default pluginId;
